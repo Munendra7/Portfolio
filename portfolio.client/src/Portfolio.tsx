@@ -225,7 +225,7 @@ export default function Portfolio() {
                 <a href="#" className={`p-3 rounded-xl backdrop-blur-xl ${theme === 'dark' ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-white/80 hover:bg-gray-100/80'} border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'} transition-all hover:scale-110 shadow-lg`}>
                   <Briefcase size={24} />
                 </a>
-                <a href="#" className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl transition-all hover:scale-105 shadow-xl flex items-center gap-2 group font-medium">
+                <a href="https://drive.google.com/uc?export=download&id=1vY5SUhyLLKorZguJK1MKGtwelRH4kpS8" className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl transition-all hover:scale-105 shadow-xl flex items-center gap-2 group font-medium">
                   <FileText size={20} />
                   Resume
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
