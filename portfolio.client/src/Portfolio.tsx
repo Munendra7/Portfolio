@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Moon, Sun, Github, Linkedin, FileText, Mail, ExternalLink, Menu, X, ArrowRight, Code, Sparkles, Award } from 'lucide-react';
 import myPhoto from './assets/MUNENDRA PHOTO.jpg';
+import AgentDemo from './assets/AgentDemo.gif';
 
 export default function Portfolio() {
   const [theme, setTheme] = useState('dark');
@@ -72,7 +73,7 @@ export default function Portfolio() {
       title: 'AI-Agent',
       description: 'AI-Agent is a full-stack, intelligent assistant built with the Semantic Kernel Agent Framework. It combines a React + Tailwind frontend with an ASP.NET Core + Semantic Kernel backend to deliver a context-aware, extensible AI platform.',
       tech: ['React', '.Net Core', 'SQL Server', 'Qdrant', 'Azure Blob Storage', 'Node JS', 'Semantic Kernel'],
-      image: 'https://private-user-images.githubusercontent.com/89851958/497558729-e86cca04-92ed-4853-870e-74d27d3588a8.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ3MDA5MjIsIm5iZiI6MTc2NDcwMDYyMiwicGF0aCI6Ii84OTg1MTk1OC80OTc1NTg3MjktZTg2Y2NhMDQtOTJlZC00ODUzLTg3MGUtNzRkMjdkMzU4OGE4LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjAyVDE4MzcwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY5YTFlNGVhNWZmMTY1MGUzYmQ2MjlkNzg5YWVkODM1MDRlMjJhMmYxOTliOGFiODE1Y2I4MjBjMTNjNjRiMTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xKF4KUFoPczSyQUPWKPS9ze8UC5JkBnyIgXs3FZk53Q',
+      image: AgentDemo,
       github: 'https://github.com/Munendra7/Ai-Agent',
       live: "https://www.youtube.com/watch?v=-5dCIRRaq_A",
       gradient: 'from-purple-500 to-pink-500'
