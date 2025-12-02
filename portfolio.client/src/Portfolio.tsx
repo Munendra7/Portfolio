@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Moon, Sun, Github, Linkedin, FileText, Mail, ExternalLink, Briefcase, Menu, X, ArrowRight, Code, Sparkles, Award, Cloud, Database, Shield } from 'lucide-react';
+import { Moon, Sun, Github, Linkedin, FileText, Mail, ExternalLink, Menu, X, ArrowRight, Code, Sparkles, Award } from 'lucide-react';
 import myPhoto from './assets/MUNENDRA PHOTO.jpg';
 
 export default function Portfolio() {
@@ -36,51 +36,45 @@ export default function Portfolio() {
 
   const certifications = [
     { 
-      name: 'AWS Certified Solutions Architect',
-      icon: <Cloud size={18} />,
-      link: 'https://aws.amazon.com/certification/',
-      color: 'from-orange-500 to-yellow-500'
+      name: 'Azure AI Fundamentals',
+      icon: <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Azure AI Fundamentals" className="w-12 h-12" />,
+      link: 'https://learn.microsoft.com/en-us/users/munendra-0579/credentials/54d4558d15bb0839',
+      color: ''
     },
     { 
-      name: 'Google Cloud Professional',
-      icon: <Cloud size={18} />,
-      link: 'https://cloud.google.com/certification',
-      color: 'from-blue-500 to-cyan-500'
+      name: 'Azure Fundamentals',
+      icon: <img src="https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg" alt="Azure AI Fundamentals" className="w-12 h-12" />,
+      link: 'https://learn.microsoft.com/en-us/users/munendra-0579/credentials/e813f0fe470e0af1',
+      color: ''
     },
     { 
-      name: 'Certified Kubernetes Administrator',
-      icon: <Shield size={18} />,
-      link: 'https://www.cncf.io/certification/cka/',
-      color: 'from-blue-600 to-purple-600'
+      name: 'Power Platform Solution Architect Expert',
+      icon: <img src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-expert-badge.svg" alt="Power Platform Solution Architect Expert" className="w-12 h-12" />,
+      link: 'https://learn.microsoft.com/en-us/users/munendra-0579/credentials/5c70cd70071f68b1',
+      color: ''
     },
     { 
-      name: 'MongoDB Certified Developer',
-      icon: <Database size={18} />,
-      link: 'https://university.mongodb.com/certification',
-      color: 'from-green-500 to-emerald-600'
+      name: 'Power BI Data Analyst Associate',
+      icon: <img src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Power Platform Solution Architect Expert" className="w-12 h-12" />,
+      link: 'https://learn.microsoft.com/en-us/users/munendra-0579/credentials/d876fff497b08fd4',
+      color: ''
     },
     { 
-      name: 'Oracle Java Certification',
-      icon: <Code size={18} />,
-      link: 'https://education.oracle.com/java-certification',
-      color: 'from-red-500 to-orange-600'
-    },
-    { 
-      name: 'Microsoft Azure Fundamentals',
-      icon: <Cloud size={18} />,
-      link: 'https://learn.microsoft.com/en-us/certifications/',
-      color: 'from-blue-500 to-indigo-600'
+      name: 'Power Platform Developer Associate',
+      icon: <img src="https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg" alt="Power Platform Solution Architect Expert" className="w-12 h-12" />,
+      link: 'https://learn.microsoft.com/en-us/users/munendra-0579/credentials/c03a6c347a5f1910',
+      color: ''
     }
   ];
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce application with payment integration, inventory management, and real-time notifications.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      image: 'https://placehold.co/600x400/4F46E5/ffffff?text=E-Commerce+Platform',
-      github: '#',
-      live: '#',
+      title: 'AI-Agent',
+      description: 'AI-Agent is a full-stack, intelligent assistant built with the Semantic Kernel Agent Framework. It combines a React + Tailwind frontend with an ASP.NET Core + Semantic Kernel backend to deliver a context-aware, extensible AI platform.',
+      tech: ['React', '.Net Core', 'SQL Server', 'Qdrant', 'Azure Blob Storage', 'Node JS', 'Semantic Kernel'],
+      image: 'https://private-user-images.githubusercontent.com/89851958/497558729-e86cca04-92ed-4853-870e-74d27d3588a8.gif?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ3MDA5MjIsIm5iZiI6MTc2NDcwMDYyMiwicGF0aCI6Ii84OTg1MTk1OC80OTc1NTg3MjktZTg2Y2NhMDQtOTJlZC00ODUzLTg3MGUtNzRkMjdkMzU4OGE4LmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjAyVDE4MzcwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY5YTFlNGVhNWZmMTY1MGUzYmQ2MjlkNzg5YWVkODM1MDRlMjJhMmYxOTliOGFiODE1Y2I4MjBjMTNjNjRiMTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xKF4KUFoPczSyQUPWKPS9ze8UC5JkBnyIgXs3FZk53Q',
+      github: 'https://github.com/Munendra7/Ai-Agent',
+      live: "https://www.youtube.com/watch?v=-5dCIRRaq_A",
       gradient: 'from-purple-500 to-pink-500'
     },
     {
@@ -184,46 +178,19 @@ export default function Portfolio() {
               </h2>
               
               <p className={`text-xl sm:text-2xl mb-6 font-medium ${theme === 'dark' ? 'text-gray-300' : 'text-gray-700'}`}>
-                Full Stack Developer | Software Engineer | SharePoint Developer | Power Platform | React | .Net Core | Azure | Gen AI | Agentic AI | Tech Lead @ Xceedance | 5x Microsoft Certified
+                Full Stack Developer | SharePoint | Power Platform | React | .Net Core | Azure | Gen AI | Agentic AI | Tech Lead @ Xceedance | 5x Microsoft Certified
               </p>
               
               <p className={`text-base sm:text-lg mb-6 max-w-2xl mx-auto lg:mx-0 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
-                Building scalable applications and turning ideas into reality. Passionate about clean code, innovative solutions, and continuous learning.
+                Experienced in architecting and delivering scalable enterprise applications. Proficient in SharePoint, Power Platform, ASP.NET Core, and React with strong full-stack development expertise.
               </p>
               
-              {/* Certification Badges in Hero */}
               <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
-                {certifications.slice(0, 4).map((cert, i) => (
-                  <div
-                    key={i}
-                    className={`inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-xl ${theme === 'dark' ? 'bg-gray-800/80 border-gray-700' : 'bg-white/80 border-gray-200'} border shadow-lg hover:scale-105 transition-all group cursor-pointer`}
-                  >
-                    <div className={`p-1 rounded-lg bg-gradient-to-r ${cert.color} text-white`}>
-                      {cert.icon}
-                    </div>
-                    <span className="text-xs sm:text-sm font-medium">
-                      {cert.name.split(' ').slice(0, 2).join(' ')}
-                    </span>
-                  </div>
-                ))}
-                <a 
-                  href="#certifications"
-                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full backdrop-blur-xl ${theme === 'dark' ? 'bg-blue-600/20 border-blue-500/30' : 'bg-blue-600/20 border-blue-500/30'} border shadow-lg hover:scale-105 transition-all text-blue-600 font-medium text-xs sm:text-sm`}
-                >
-                  +{certifications.length - 4} More
-                  <ArrowRight size={14} />
-                </a>
-              </div>
-              
-              <div className="flex flex-wrap justify-center lg:justify-start gap-3 mb-8">
-                <a href="#" className={`p-3 rounded-xl backdrop-blur-xl ${theme === 'dark' ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-white/80 hover:bg-gray-100/80'} border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'} transition-all hover:scale-110 shadow-lg`}>
+                <a href="https://github.com/Munendra7" target='_blank' className={`p-3 rounded-xl backdrop-blur-xl ${theme === 'dark' ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-white/80 hover:bg-gray-100/80'} border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'} transition-all hover:scale-110 shadow-lg`}>
                   <Github size={24} />
                 </a>
-                <a href="#" className={`p-3 rounded-xl backdrop-blur-xl ${theme === 'dark' ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-white/80 hover:bg-gray-100/80'} border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'} transition-all hover:scale-110 shadow-lg`}>
+                <a href="https://linkedin.com/in/munendra7" target='_blank' className={`p-3 rounded-xl backdrop-blur-xl ${theme === 'dark' ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-white/80 hover:bg-gray-100/80'} border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'} transition-all hover:scale-110 shadow-lg`}>
                   <Linkedin size={24} />
-                </a>
-                <a href="#" className={`p-3 rounded-xl backdrop-blur-xl ${theme === 'dark' ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-white/80 hover:bg-gray-100/80'} border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'} transition-all hover:scale-110 shadow-lg`}>
-                  <Briefcase size={24} />
                 </a>
                 <a href="https://drive.google.com/uc?export=download&id=1vY5SUhyLLKorZguJK1MKGtwelRH4kpS8" className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl transition-all hover:scale-105 shadow-xl flex items-center gap-2 group font-medium">
                   <FileText size={20} />
@@ -402,13 +369,15 @@ export default function Portfolio() {
                   <div className="flex gap-4">
                     <a 
                       href={project.github} 
+                      target='_blank'
                       className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-all hover:gap-3"
                     >
                       <Github size={18} />
                       <span className="text-sm">Code</span>
                     </a>
                     <a 
-                      href={project.live} 
+                      href={project.live}
+                      target='_blank'
                       className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-all hover:gap-3"
                     >
                       <ExternalLink size={18} />
