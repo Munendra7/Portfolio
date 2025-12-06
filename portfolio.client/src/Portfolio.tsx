@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Moon, Sun, Github, Linkedin, FileText, Mail, ExternalLink, Menu, X, ArrowRight, Code, Sparkles, Award } from 'lucide-react';
 import myPhoto from './assets/MUNENDRA PHOTO.jpg';
 import AgentDemo from './assets/AgentDemo.gif';
+import resume from './assets/Munendra_SharePoint_PowerPlatform_DotNet_Resume.pdf';
 
 export default function Portfolio() {
   const [theme, setTheme] = useState('dark');
@@ -21,18 +22,20 @@ export default function Portfolio() {
   const toggleTheme = () => setTheme(prev => prev === 'dark' ? 'light' : 'dark');
 
   const skills = [
-    { name: 'React', level: 90 },
-    { name: 'JavaScript', level: 95 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'Node.js', level: 88 },
-    { name: 'Python', level: 82 },
-    { name: 'Java', level: 80 },
-    { name: 'AWS', level: 85 },
-    { name: 'Docker', level: 88 },
-    { name: 'Kubernetes', level: 75 },
-    { name: 'MongoDB', level: 87 },
-    { name: 'PostgreSQL', level: 84 },
-    { name: 'REST APIs', level: 92 }
+    { name: 'React', level: 95 },
+    { name: '.Net Core', level: 85 },
+    { name: 'SharePoint', level: 100 },
+    { name: 'Power Automate', level: 100 },
+    { name: 'Power Pages', level: 85 },
+    { name: 'Power Apps', level: 80 },
+    { name: 'Power BI', level: 75 },
+    { name: 'JavaScript', level: 90 },
+    { name: 'TypeScript', level: 90 },
+    { name: 'C#', level: 88 },
+    { name: 'Azure', level: 85 },
+    { name: 'SQL Server', level: 80 },
+    { name: 'Docker', level: 80 },
+    { name: 'Gen AI & Agentic AI', level: 75 }
   ];
 
   const certifications = [
@@ -79,19 +82,19 @@ export default function Portfolio() {
       gradient: 'from-purple-500 to-pink-500'
     },
     {
-      title: 'Task Management System',
-      description: 'Collaborative project management tool with drag-and-drop functionality, team chat, and analytics dashboard.',
-      tech: ['React', 'Express', 'PostgreSQL', 'Socket.io'],
-      image: 'https://placehold.co/600x400/0891B2/ffffff?text=Task+Manager',
+      title: 'To Be Updated',
+      description: '',
+      tech: ['TBU'],
+      image: 'https://placehold.co/600x400/0891B2/ffffff?text=To+Be+Updated',
       github: '#',
       live: '#',
       gradient: 'from-cyan-500 to-blue-500'
     },
     {
-      title: 'AI Content Generator',
-      description: 'Machine learning powered content creation tool with natural language processing and sentiment analysis.',
-      tech: ['Python', 'TensorFlow', 'FastAPI', 'React'],
-      image: 'https://placehold.co/600x400/059669/ffffff?text=AI+Generator',
+      title: 'To Be Updated',
+      description: '',
+      tech: ['TBU'],
+      image: 'https://placehold.co/600x400/059669/ffffff?text=To+Be+Updated',
       github: '#',
       live: '#',
       gradient: 'from-green-500 to-emerald-500'
@@ -193,7 +196,7 @@ export default function Portfolio() {
                 <a href="https://linkedin.com/in/munendra7" target='_blank' className={`p-3 rounded-xl backdrop-blur-xl ${theme === 'dark' ? 'bg-gray-800/80 hover:bg-gray-700/80' : 'bg-white/80 hover:bg-gray-100/80'} border ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'} transition-all hover:scale-110 shadow-lg`}>
                   <Linkedin size={24} />
                 </a>
-                <a href="https://drive.google.com/uc?export=download&id=1vY5SUhyLLKorZguJK1MKGtwelRH4kpS8" className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl transition-all hover:scale-105 shadow-xl flex items-center gap-2 group font-medium">
+                <a href={resume} target='_blank' className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl transition-all hover:scale-105 shadow-xl flex items-center gap-2 group font-medium">
                   <FileText size={20} />
                   Resume
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -396,13 +399,13 @@ export default function Portfolio() {
       <section id="contact" className="py-16 sm:py-24 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-            Let's Work Together
+            Let's Connect
           </h2>
           <p className={`text-lg mb-8 ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:munendrach7@gmail.com"
             className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-xl transition-all hover:scale-105 shadow-2xl text-lg font-medium group"
           >
             <Mail size={24} />
