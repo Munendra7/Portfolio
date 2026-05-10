@@ -10,6 +10,7 @@ const skills = [
     { name: 'Power BI', level: 75 },
     { name: 'JavaScript', level: 90 },
     { name: 'TypeScript', level: 90 },
+    { name: 'Python', level: 80 },
     { name: 'C#', level: 88 },
     { name: 'Azure', level: 85 },
     { name: 'SQL Server', level: 80 },
